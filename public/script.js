@@ -1,4 +1,4 @@
-const socket = io("/");
+const socket = io("https://video-chat-app-bdwn.onrender.com");
 const videoGrid = document.getElementById("video-grid");
 const myVideo = document.createElement("video");
 const showChat = document.querySelector("#showChat");
@@ -22,7 +22,7 @@ showChat.addEventListener("click", () => {
 const user = prompt("Enter your name");
 
 var peer = new Peer({
-  host: 'https://video-chat-app-bdwn.onrender.com',
+  host: 'video-chat-app-bdwn.onrender.com',
   port: 3030,
   path: '/peerjs',
   config: {
